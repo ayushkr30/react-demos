@@ -13,6 +13,17 @@ import CounterEffect from './components/CounterEffect';
 import FetchDataEffect from './components/FetchDataEffect';
 import ComponentA from './components/ComponentA';
 import { createContext } from 'react';
+import { UserProvider } from './UserContext';
+import UserProfile from './components/UserProfile';
+import UpdateUser from './components/UpdateUser';
+import Redducer from './components/Redducer';
+
+import Counter1 from './components/Counter1';
+import Refer from './components/Refer';
+import Timer from './components/Timer';
+import Home from './components/Home';
+
+
 
 export const Data = createContext();
 export const Data1 = createContext();
@@ -36,12 +47,23 @@ const App = () => {
     <Switcher />
     
     */}
-    
+    { /*
     <Data.Provider value={name}>
       <Data1.Provider value={Age}>
         <ComponentA />
       </Data1.Provider>
     </Data.Provider>
+    <UserProvider>
+      <UserProfile />
+      <UpdateUser />
+    </UserProvider>
+    */}
+
+    <Redducer />
+    <Counter1 />
+    <Refer />
+    <Timer />
+    <Home />
     </>
   )
 }
